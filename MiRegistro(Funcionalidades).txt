@@ -1,0 +1,29 @@
+Activity1(Registro P.1):
+-Correo electronico
+-Nombre de usuario
+-Password
+-Boton siguiente
+
+Activity2(Reigstro P.2):
+-Nombre
+-Direccion
+-Edad
+-Sexo
+-Boton confirmar registro
+
+Activity3(Pantalla de navegacion):
+-Confirmacion de registro
+-Boton modificar al usuario
+-Boton buscar usuario
+
+Activity4(Modificacion de usuario):
+-Campos para modificar
+-Boton modificar usuario
+-Mensaje de confirmacion de modificacion
+-Boton regresar a pantalla de navegacion
+
+Activity5(Busqueda de usuario):
+-Buscar por nombre
+-Por edad
+-Por sexo
+-Boton regresar a pantalla de navegacion
