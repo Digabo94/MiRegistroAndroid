@@ -3,6 +3,9 @@ Activity1(Registro P.1):
 -Nombre de usuario
 -Password
 -Boton siguiente
+Descripcion: En un archivo XML se ingresara la informacion esta primera informacion del usuario y el boton de siguiente dara paso a la siguiente
+actividad del registro.
+
 
 Activity2(Reigstro P.2):
 -Nombre
@@ -10,20 +13,31 @@ Activity2(Reigstro P.2):
 -Edad
 -Sexo
 -Boton confirmar registro
+Descripcion: La segunda parte del registro ingresara en el XML la otra parte del usuario y el boton culminara el registro del usuario.
+
 
 Activity3(Pantalla de navegacion):
 -Confirmacion de registro
 -Boton modificar al usuario
 -Boton buscar usuario
+Descripcion: Se confirma el correcto registro del usuario (si no hubo errores), el boton modificar te llevara a la actividad para modificar a un
+usuario existente previamente y el boton buscar usuario te llevara a la actividad que buscara a un usuario.
+
 
 Activity4(Modificacion de usuario):
 -Campos para modificar
 -Boton modificar usuario
 -Mensaje de confirmacion de modificacion
 -Boton regresar a pantalla de navegacion
+Descripcion: Mediante unos campos de informacion del usuario se modificaran los campos de usuario ingresados. El boton confirmacion de modificacion
+dara paso al proceso de modificar los datos de un usuario existente. Y el boton de regresar te permitira regresa a la pantalla de navegacion.
+
+
 
 Activity5(Busqueda de usuario):
 -Buscar por nombre
 -Por edad
 -Por sexo
 -Boton regresar a pantalla de navegacion
+Descripcion: Habra campos que funcionaran como filtros para hacer busquedas de usuarios que se adecuen a los filtros dados. El boton regresar pantalla 
+te permitira regresar a la pantalla de navegacion.
