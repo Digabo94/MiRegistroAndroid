@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Registro_uno"></activity>
-        <activity android:name=".Bienvenido">
+        <activity android:name=".Bienvenido"></activity>
+        <activity android:name=".Registro_dos">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

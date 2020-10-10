@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DFDEDE"
     tools:context=".Bienvenido">
 
 
@@ -35,14 +36,14 @@
                 android:layout_marginTop="70dp"
                 android:text="Deseo registrarme" />
 
-            <Button
-                android:id="@+id/btnRegistro"
-                android:layout_width="137dp"
-                android:layout_height="143dp"
-                android:layout_below="@id/checkBoxRegistro"
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/agregar_usuario"
+                android:background="?attr/selectableItemBackgroundBorderless"
                 android:layout_gravity="center"
-                android:layout_marginTop="70dp"
-                android:background="@drawable/animacion_boton" />
+                android:layout_marginTop="60dp"/>
 
         </LinearLayout>
 
