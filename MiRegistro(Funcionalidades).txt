@@ -1,3 +1,7 @@
+Activity0(Bienvenido):
+-Boton para empezar registro
+Descripcion: se encargara de dar la bienvenida a los visitantes e invitarlos a registrarse.
+
 Activity1(Registro P.1):
 -Correo electronico
 -Nombre de usuario
