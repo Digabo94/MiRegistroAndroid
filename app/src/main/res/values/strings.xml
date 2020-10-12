@@ -9,4 +9,8 @@
     <string name="direccion">Dirección</string>
     <string name="edad">Edad</string>
     <string name="sexo">Sexo</string>
+    <string name="navegacion">¿Qué desea hacer?</string>
+    <string name="modificar_radio">Modificar usuario</string>
+    <string name="buscar">Buscar usuario</string>
+    <string name="salir">Salir</string>
 </resources>
