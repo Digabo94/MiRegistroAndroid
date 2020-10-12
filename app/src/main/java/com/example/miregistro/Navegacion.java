@@ -6,7 +6,6 @@ import android.widget.ImageButton;
 import android.widget.RadioButton;
 
 import animaciones.AnimacionBotones;
-import animaciones.AnimacionBotones.*;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,7 +13,8 @@ public class Navegacion extends AppCompatActivity {
 
     ImageButton imageButton;
     RadioButton modificarUsuario, buscarUsuario, salir;
-    AnimacionBotones animacionBotones;
+    AnimacionBotones botones = new AnimacionBotones();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +24,12 @@ public class Navegacion extends AppCompatActivity {
         modificarUsuario = findViewById(R.id.modificarUsuario);
         buscarUsuario = findViewById(R.id.buscarUsuario);
         salir = findViewById(R.id.salir);
+        botones.animacionRadioButton(modificarUsuario, buscarUsuario, salir, imageButton);
+    }
 
-        animacionBotones.botonModificar(modificarUsuario);
-        animacionBotones.botonBuscar(buscarUsuario);
-        animacionBotones.botonSalir(salir);
+
+
+    public void radioGroup(View view) {
+        botones.animacionRadioButton(modificarUsuario, buscarUsuario, salir, imageButton);
     }
 }

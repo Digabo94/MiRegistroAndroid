@@ -33,16 +33,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
                 android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:onClick="radioGroup">
 
                 <RadioButton
                     android:id="@+id/modificarUsuario"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:checked="true"
                     android:gravity="left"
                     android:text="@string/modificar_radio"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp"
+                    android:onClick="radioGroup"/>
 
                 <RadioButton
                     android:id="@+id/buscarUsuario"
@@ -51,16 +52,19 @@
                     android:gravity="left"
                     android:text="@string/buscar"
                     android:textSize="20sp"
-                    android:layout_marginTop="15dp"/>
+                    android:layout_marginTop="15dp"
+                    android:onClick="radioGroup"/>
 
                 <RadioButton
                     android:id="@+id/salir"
                     android:layout_width="189dp"
                     android:layout_height="match_parent"
                     android:gravity="left"
+                    android:checked="true"
                     android:text="@string/salir"
                     android:textSize="20sp"
-                    android:layout_marginTop="15dp"/>
+                    android:layout_marginTop="15dp"
+                    android:onClick="radioGroup"/>
 
             </RadioGroup>
 
@@ -73,9 +77,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="50dp"
                 android:layout_marginRight="80dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:src="@drawable/check_button"
-                android:onClick="onClick"/>
+                android:background="?attr/selectableItemBackgroundBorderless"/>
 
             <ImageButton
                 android:id="@+id/regresar"

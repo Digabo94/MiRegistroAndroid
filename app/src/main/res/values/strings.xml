@@ -13,4 +13,5 @@
     <string name="modificar_radio">Modificar usuario</string>
     <string name="buscar">Buscar usuario</string>
     <string name="salir">Salir</string>
+    <string name="descripcion">Seleccione el campo que desea modificar</string>
 </resources>

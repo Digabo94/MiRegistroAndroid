@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_campos">
+        <item>Correo electrónico</item>
+        <item>Usuario</item>
+        <item>Contraseña</item>
+        <item>Nombre</item>
+        <item>Direccion</item>
+        <item>Edad</item>
+        <item>Sexo</item>
+    </string-array>
+</resources>
