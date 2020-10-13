@@ -95,7 +95,7 @@
                 android:layout_below="@+id/radioGroup"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="50dp"
-                android:layout_marginRight="80dp"
+                android:layout_marginRight="60dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:src="@drawable/check_button" />
 
@@ -106,7 +106,7 @@
                 android:layout_below="@+id/radioGroup"
                 android:layout_marginTop="50dp"
                 android:layout_alignParentLeft="true"
-                android:layout_marginLeft="80dp"
+                android:layout_marginLeft="60dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:src="@drawable/flecha_regresar"/>
 

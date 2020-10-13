@@ -14,4 +14,6 @@
     <string name="buscar">Buscar usuario</string>
     <string name="salir">Salir</string>
     <string name="descripcion">Seleccione el campo que desea modificar</string>
+    <string name="introduzcapass">Introduzca su contraseña</string>
+    <string name="busquedapor">Busqueda por...</string>
 </resources>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Modificacion">
+    tools:context=".Busqueda">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/modificar_radio"
+                android:text="@string/buscar"
                 android:textSize="30sp"
                 android:layout_marginTop="40dp"
                 android:textStyle="bold"/>
@@ -29,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_below="@+id/textViewModificar"
-                android:text="@string/descripcion"
+                android:text="@string/busquedapor"
                 android:textSize="14sp"
                 android:layout_marginTop="20dp"
                 android:textStyle="bold"/>
@@ -47,33 +47,80 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/input"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="30dp"/>
-
-            <TextView
-                android:id="@+id/introduzcaPass"
-                android:text="@string/introduzcapass"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:layout_marginTop="130dp"
-                android:textSize="16sp"
-                android:layout_below="@+id/campos"/>
-
-            <EditText
-                android:id="@+id/editTextPass"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/introduzcaPass"
-                android:layout_marginHorizontal="10dp"
+                android:layout_marginLeft="330dp"
                 android:layout_marginTop="20dp"/>
 
-
-            <ImageButton
-                android:id="@+id/confirmarModificacion"
+            <TextView
+                android:id="@+id/correo"
+                android:text="@string/correo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/editTextPass"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:layout_below="@+id/input"/>
+
+            <TextView
+                android:id="@+id/usuario"
+                android:text="@string/usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:layout_below="@+id/correo"/>
+
+            <TextView
+                android:id="@+id/nombre"
+                android:text="@string/nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:layout_below="@+id/usuario"/>
+
+            <TextView
+                android:id="@+id/direccion"
+                android:text="@string/direccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:layout_below="@+id/nombre"/>
+
+            <TextView
+                android:id="@+id/edad"
+                android:text="@string/edad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:layout_below="@+id/direccion"/>
+
+            <TextView
+                android:id="@+id/sexo"
+                android:text="@string/sexo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:layout_below="@+id/edad"/>
+
+            <ImageButton
+                android:id="@+id/confirmarBusqueda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sexo"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="60dp"
@@ -84,7 +131,7 @@
                 android:id="@+id/regresarNavegacion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/editTextPass"
+                android:layout_below="@+id/sexo"
                 android:layout_marginTop="30dp"
                 android:layout_alignParentLeft="true"
                 android:layout_marginLeft="60dp"
