@@ -38,15 +38,15 @@
 
 
             <ImageButton
+                android:id="@+id/registrarse"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/agregar_usuario"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:layout_gravity="center"
-                android:layout_marginTop="60dp"/>
+                android:layout_marginTop="60dp"
+                android:onClick="onClick"/>
 
         </LinearLayout>
-
-
     </ScrollView>
 </LinearLayout>

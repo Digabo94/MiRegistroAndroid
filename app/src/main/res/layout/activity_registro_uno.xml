@@ -58,7 +58,8 @@
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:layout_below="@+id/password"
                 android:layout_marginTop="50dp"
-                android:layout_centerHorizontal="true"/>
+                android:layout_centerHorizontal="true"
+                android:onClick="onClick"/>
 
         </RelativeLayout>
 

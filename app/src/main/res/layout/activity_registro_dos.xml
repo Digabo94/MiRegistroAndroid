@@ -75,7 +75,8 @@
                     android:layout_height="match_parent"
                     android:text="M"
                     android:textSize="20sp"
-                    android:checked="true"/>
+                    android:checked="true"
+                    android:onClick="onClickRadioButton"/>
 
                 <RadioButton
                     android:id="@+id/femenino"
@@ -83,7 +84,8 @@
                     android:layout_height="match_parent"
                     android:text="F"
                     android:textSize="20sp"
-                    android:layout_marginLeft="20dp"/>
+                    android:layout_marginLeft="20dp"
+                    android:onClick="onClickRadioButton"/>
 
             </RadioGroup>
 
@@ -97,7 +99,8 @@
                 android:layout_marginTop="50dp"
                 android:layout_marginRight="60dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:src="@drawable/check_button" />
+                android:src="@drawable/check_button"
+                android:onClick="onClick"/>
 
             <ImageButton
                 android:id="@+id/regresarRegistro"
@@ -108,7 +111,8 @@
                 android:layout_alignParentLeft="true"
                 android:layout_marginLeft="60dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:src="@drawable/flecha_regresar"/>
+                android:src="@drawable/flecha_regresar"
+                android:onClick="onClick"/>
 
         </RelativeLayout>
 
