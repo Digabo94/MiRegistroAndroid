@@ -51,6 +51,39 @@
                 android:layout_marginTop="30dp"/>
 
             <TextView
+                android:id="@+id/sexoModificar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="Sexo"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="18sp"
+                android:layout_below="@+id/campos"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/sexoModificar">
+                <RadioButton
+                    android:id="@+id/m"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="140dp"
+                    android:text="M"
+                    android:checked="true"/>
+                <RadioButton
+                    android:id="@+id/f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:text="F"
+                    android:layout_marginLeft="40dp" />
+
+            </RadioGroup>
+
+            <TextView
                 android:id="@+id/introduzcaPass"
                 android:text="@string/introduzcapass"
                 android:layout_width="match_parent"
@@ -66,7 +99,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/introduzcaPass"
                 android:layout_marginHorizontal="10dp"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginTop="20dp"
+                android:inputType="textPassword"/>
 
 
             <ImageButton
@@ -78,7 +112,8 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="60dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:src="@drawable/check_button" />
+                android:src="@drawable/check_button"
+                android:onClick="onClickConfirmarModificacion"/>
 
             <ImageButton
                 android:id="@+id/regresarNavegacion"
@@ -89,7 +124,8 @@
                 android:layout_alignParentLeft="true"
                 android:layout_marginLeft="60dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:src="@drawable/flecha_regresar"/>
+                android:src="@drawable/flecha_regresar"
+                android:onClick="onClickRegresarNavegacion"/>
 
         </RelativeLayout>
 

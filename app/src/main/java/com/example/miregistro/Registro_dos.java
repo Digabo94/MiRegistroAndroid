@@ -1,16 +1,20 @@
 package com.example.miregistro;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
+import android.content.SharedPreferences;
 
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.domain.UsuarioDTO;
 import com.example.excepciones.Excepciones;
+import com.example.listaSharedPreferences.SharedPreferencesUsuarios;
 
 public class Registro_dos extends AppCompatActivity {
 
@@ -18,9 +22,10 @@ public class Registro_dos extends AppCompatActivity {
     RadioButton masculino, femenino;
     ImageButton regresarRegistro, confirmarRegistro;
     UsuarioDTO usuarioDTO;
+    SharedPreferences creacionLista;
+    SharedPreferencesUsuarios listaUsuarios;
+    Intent miIntencion;
     String sexo;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,8 +61,12 @@ public class Registro_dos extends AppCompatActivity {
             case R.id.confirmarRegistro:
                 Excepciones nulos = new Excepciones();
                 if (nulos.campoNuloNumerico(nombre, direccion, edad, getApplicationContext())){
+                    creacionLista = getSharedPreferences("ListaUsuarios", Context.MODE_PRIVATE);
+                    listaUsuarios = new SharedPreferencesUsuarios();
                     usuarioDTO = new UsuarioDTO(nombre, direccion, edad, sexo);
-
+                    listaUsuarios.guardarUsuario(usuarioDTO, creacionLista, getApplicationContext());
+                    miIntencion = new Intent(getApplicationContext(), Navegacion.class);
+                    startActivity(miIntencion);
                 }
                 break;
         }

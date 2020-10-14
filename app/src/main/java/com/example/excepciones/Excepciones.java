@@ -36,7 +36,7 @@ public class Excepciones extends AppCompatActivity {
         return verificarNulo;
     }
 
-    private boolean valorNumerico(EditText editText, Context context){
+    public boolean valorNumerico(EditText editText, Context context){
         int edad = 0;
         boolean verificarNumero = false;
         try{

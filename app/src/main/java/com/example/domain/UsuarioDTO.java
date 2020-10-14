@@ -37,7 +37,7 @@ public class UsuarioDTO {
     }
 
 
-    public static String getCorreoElectronico() {
+    public String getCorreoElectronico() {
         return correoElectronico;
     }
 
