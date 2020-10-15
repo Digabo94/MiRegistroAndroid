@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/input"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="30dp"/>
+                android:layout_marginTop="30dp" />
 
             <TextView
                 android:id="@+id/sexoModificar"
@@ -59,7 +59,8 @@
                 android:text="Sexo"
                 style="@style/TextAppearance.AppCompat.Medium"
                 android:textSize="18sp"
-                android:layout_below="@+id/campos"/>
+                android:layout_below="@+id/campos"
+                android:visibility="invisible"/>
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -72,14 +73,16 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="140dp"
                     android:text="M"
-                    android:checked="true"/>
+                    android:checked="true"
+                    android:visibility="invisible"/>
                 <RadioButton
                     android:id="@+id/f"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="40dp"
                     android:text="F"
-                    android:layout_marginLeft="40dp" />
+                    android:layout_marginLeft="40dp"
+                    android:visibility="invisible"/>
 
             </RadioGroup>
 

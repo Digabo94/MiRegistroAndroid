@@ -5,7 +5,7 @@
         <item>Usuario</item>
         <item>Contraseña</item>
         <item>Nombre</item>
-        <item>Direccion</item>
+        <item>Dirección</item>
         <item>Edad</item>
         <item>Sexo</item>
     </string-array>
