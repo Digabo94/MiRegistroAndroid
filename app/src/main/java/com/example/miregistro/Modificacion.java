@@ -16,7 +16,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.domain.UsuarioDTO;
-import com.example.listaSharedPreferences.SharedPreferencesUsuarios;
+import com.example.listaSharedPreferences.ModificacionLista;
 
 public class Modificacion extends AppCompatActivity {
 
@@ -26,7 +26,7 @@ public class Modificacion extends AppCompatActivity {
     ImageButton regresarNavegacion, confirmarModificacion;
     RadioButton f, m;
     SharedPreferences listaUsuarios;
-    SharedPreferencesUsuarios modificarLista;
+    ModificacionLista modificarLista;
     UsuarioDTO usuarioDTO;
     String itemSpinner;
 
@@ -109,7 +109,7 @@ public class Modificacion extends AppCompatActivity {
     }
 
     public void onClickConfirmarModificacion(View view) {
-        modificarLista = new SharedPreferencesUsuarios();
+        modificarLista = new ModificacionLista();
         usuarioDTO = new UsuarioDTO();
         listaUsuarios = getSharedPreferences("ListaUsuarios", Context.MODE_PRIVATE);
         usuarioDTO.setPassword(editTextPass.getText().toString());

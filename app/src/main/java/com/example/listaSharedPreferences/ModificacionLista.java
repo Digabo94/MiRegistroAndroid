@@ -10,7 +10,7 @@ import com.example.excepciones.Excepciones;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.domain.UsuarioDTO;
 
-public class SharedPreferencesUsuarios{
+public class ModificacionLista{
 
     public void guardarUsuario(UsuarioDTO usuarioDTO, SharedPreferences preferences, Context context){
          SharedPreferences.Editor editor = preferences.edit();

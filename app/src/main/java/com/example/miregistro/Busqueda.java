@@ -3,16 +3,11 @@ package com.example.miregistro;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.text.InputType;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.EditText;
-import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.listaSharedPreferences.SharedPreferencesUsuarios;
+import com.example.listaSharedPreferences.ModificacionLista;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -23,7 +18,7 @@ public class Busqueda extends AppCompatActivity {
     TextView correo, usuario, nombre, direccion, edad, sexo;
     String itemSpinner;
     SharedPreferences preference;
-    SharedPreferencesUsuarios miLista;
+    ModificacionLista miLista;
 
 
     @Override
@@ -42,7 +37,7 @@ public class Busqueda extends AppCompatActivity {
 
     public void onClickBusqueda(View view) {
         preference = getSharedPreferences("ListaUsuarios", Context.MODE_PRIVATE);
-        miLista = new SharedPreferencesUsuarios();
+        miLista = new ModificacionLista();
         miLista.buscarUsuarioCampos("Correo electrónico", correo, inputBusqueda, preference, getApplicationContext(), false);
         miLista.buscarUsuarioCampos("Usuario", usuario, inputBusqueda, preference, getApplicationContext(), false);
         miLista.buscarUsuarioCampos("Nombre", nombre, inputBusqueda, preference, getApplicationContext(), false);

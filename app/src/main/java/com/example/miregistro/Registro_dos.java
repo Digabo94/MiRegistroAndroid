@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.domain.UsuarioDTO;
 import com.example.excepciones.Excepciones;
-import com.example.listaSharedPreferences.SharedPreferencesUsuarios;
+import com.example.listaSharedPreferences.ModificacionLista;
 
 public class Registro_dos extends AppCompatActivity {
 
@@ -23,7 +23,7 @@ public class Registro_dos extends AppCompatActivity {
     ImageButton regresarRegistro, confirmarRegistro;
     UsuarioDTO usuarioDTO;
     SharedPreferences creacionLista;
-    SharedPreferencesUsuarios listaUsuarios;
+    ModificacionLista listaUsuarios;
     Intent miIntencion;
     String sexo;
 
@@ -60,7 +60,7 @@ public class Registro_dos extends AppCompatActivity {
                 }
                 if (nulos.campoNuloNumerico(nombre, direccion, edad, getApplicationContext())) {
                     creacionLista = getSharedPreferences("ListaUsuarios", Context.MODE_PRIVATE);
-                    listaUsuarios = new SharedPreferencesUsuarios();
+                    listaUsuarios = new ModificacionLista();
                     usuarioDTO = new UsuarioDTO(nombre, direccion, edad, sexo);
                     listaUsuarios.guardarUsuario(usuarioDTO, creacionLista, getApplicationContext());
                     miIntencion = new Intent(getApplicationContext(), Navegacion.class);
