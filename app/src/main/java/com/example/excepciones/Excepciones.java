@@ -12,7 +12,7 @@ import com.example.miregistro.Registro_uno;
 
 public class Excepciones extends AppCompatActivity {
 
-    public boolean campoNulo(EditText editText1, EditText editText2, EditText editText3, Context context){
+    public boolean camposNulos(EditText editText1, EditText editText2, EditText editText3, Context context){
         boolean verificarNulo = false;
         if((editText1.getText().toString().isEmpty()) || (editText2.getText().toString().isEmpty()) || (editText3.getText().toString().isEmpty())){
             verificarNulo = false;
@@ -46,5 +46,16 @@ public class Excepciones extends AppCompatActivity {
             Toast.makeText(context,"Introduzca un valor entero",Toast.LENGTH_LONG).show();
         }
         return verificarNumero;
+    }
+
+    public boolean campoNulo(EditText editText, Context context){
+        boolean verificar = false;
+        if(editText.getText().toString() == ""){
+            Toast.makeText(context, "No puede dejar el campo nulo", Toast.LENGTH_LONG).show();
+            verificar = false;
+        } else{
+            verificar = true;
+        }
+        return verificar;
     }
 }

@@ -42,25 +42,23 @@ public class Registro_dos extends AppCompatActivity {
     }
 
     public void onClickRadioButton(View view) {
-        switch (view.getId()){
-            case R.id.masculino:
-                sexo = "Masculino";
-                break;
-            case R.id.femenino:
-                sexo = "Femenino";
-                break;
-        }
+
     }
 
 
     public void onClick(View view) {
-        switch(view.getId()) {
+        switch (view.getId()) {
             case R.id.regresarRegistro:
                 finish();
                 break;
             case R.id.confirmarRegistro:
                 Excepciones nulos = new Excepciones();
-                if (nulos.campoNuloNumerico(nombre, direccion, edad, getApplicationContext())){
+                if (masculino.isChecked()) {
+                    sexo = "Masculino";
+                } else {
+                    sexo = "Femenino";
+                }
+                if (nulos.campoNuloNumerico(nombre, direccion, edad, getApplicationContext())) {
                     creacionLista = getSharedPreferences("ListaUsuarios", Context.MODE_PRIVATE);
                     listaUsuarios = new SharedPreferencesUsuarios();
                     usuarioDTO = new UsuarioDTO(nombre, direccion, edad, sexo);

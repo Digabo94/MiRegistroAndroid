@@ -24,7 +24,7 @@ public class Registro_uno extends AppCompatActivity {
     public void onClick(View view){
         Intent miIntencion = new Intent(getApplicationContext(), Registro_dos.class);
         Excepciones nulos  = new Excepciones();
-        if(nulos.campoNulo(correoElectronico, nombreUsuario, password, getApplicationContext())) {
+        if(nulos.camposNulos(correoElectronico, nombreUsuario, password, getApplicationContext())) {
             UsuarioDTO usuarioDTO = new UsuarioDTO(correoElectronico, nombreUsuario, password);
             startActivity(miIntencion);
         }

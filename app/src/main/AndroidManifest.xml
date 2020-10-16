@@ -9,12 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Bienvenido"></activity>
+        <activity android:name=".Busqueda"></activity>
         <activity android:name=".Navegacion"></activity>
         <activity android:name=".Registro_dos"></activity>
         <activity android:name=".Registro_uno"></activity>
-        <activity android:name=".Busqueda"></activity>
-        <activity android:name=".Modificacion">
+        <activity android:name=".Modificacion"></activity>
+        <activity android:name=".Bienvenido">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
